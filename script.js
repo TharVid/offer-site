@@ -13,7 +13,7 @@ let userName = localStorage.getItem("userName") || "";
 const canvas = document.getElementById("previewCanvas");
 const ctx = canvas.getContext("2d");
 const tshirtImg = new Image();
-tshirtImg.src = "assets/tshirt.png";
+tshirtImg.src = "tshirt.png";
 
 // Draw T-shirt + name
 tshirtImg.onload = () => {
