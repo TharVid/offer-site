@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Win a Free GeekSwags T-Shirt</title>
+
+  <!-- ✅ Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6DYWTF68M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // track all subdomains under one property
+    gtag('config', 'G-Y6DYWTF68M', {
+      'send_page_view': true,
+      'cookie_domain': 'geekswags.in'
+    });
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 Win a Free GeekSwags T-Shirt!</h1>
+    <p>Preview your name on our iconic tee. Share with 5 friends to enter — every participant gets ₹50 OFF!</p>
+
+    <div class="preview-box">
+      <canvas id="previewCanvas" width="400" height="400"></canvas>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button id="previewBtn">Preview</button>
+    </div>
+
+    <div class="share-section hidden" id="shareSection">
+      <p id="shareCounter">Shares Left: 5</p>
+      <button class="share-btn" id="whatsappShare">Share on WhatsApp</button>
+    </div>
+
+    <div class="order-section hidden" id="orderSection">
+      <p class="coupon">🎉 You’ve won a ₹50 OFF coupon! Use code <b>GEEK50</b></p>
+      <button id="orderNowBtn">Order Now</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

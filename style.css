@@ -1,0 +1,99 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f2f2;
+  color: #111;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.preview-box {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 20px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: #fff; /* ensures black tee stands out */
+}
+
+.input-section input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+button:hover { opacity: 0.9; }
+
+#previewBtn {
+  background: #111;
+  color: white;
+}
+
+.share-btn {
+  background: #25D366;
+  color: white;
+}
+
+#orderNowBtn {
+  background: #0078ff;
+  color: white;
+}
+
+.coupon {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  background: #e8f5e9;
+  color: #111;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.3rem; }
+  button { font-size: 0.95rem; }
+}
